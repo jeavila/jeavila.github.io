@@ -1,0 +1,62 @@
+I""<h1 id="clonar-proyectos-en-github">Clonar Proyectos en Github</h1>
+
+<h2 id="instalar-git">Instalar Git</h2>
+<p>Git es un sistema de control de versiones (CVS). Su propósito es llevar registro de los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos.<a href="https://es.wikipedia.org/wiki/Git">[1]</a></p>
+
+<p>Para instalarlo nos dirigimos a la <a href="https://git-scm.com/download/win">página de descarga</a> y se instala como un programa cualquiera.</p>
+
+<p>Para cerciorarse que el programa se ha instalado correctamente se siguen los siguientes pasos:</p>
+<ol>
+  <li>Abrir el CMD (la terminal de Windows). Presionando las teclas Windows + R se abre un cuadro de dialogo en el que se escribe <code class="highlighter-rouge">cmd</code>.</li>
+  <li>En el terminal se escribe el comando:</li>
+</ol>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>git <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>Debe mostrar la versión actual de Git que está instalada.</p>
+
+<h2 id="clonar-un-repositorio">Clonar un Repositorio</h2>
+<p>Dentro de Git se pueden manejar repositorios locales (en una misma computadora) y de tener repositorios remotos (en la red local o utilizando Internet).</p>
+
+<p>Github es un sitio web donde se alojan una serie de repositorios remotos los cuales en su mayoría son públicos. Esto permite que cualquier persona pueda descargar estos repositorios remotos públicos y utilizarlos a su conveniencia: Modificando el código, estudiando las formas de codificar de otras personas o empresas, etc.</p>
+
+<p>Al acto de descargar los repositorios se le llama clonación, debido a que tenemos una copia exacta del repositorio.</p>
+
+<p>Para esto vamos a Github, al repositorio que deseamos clonar. Para este ejemplo el repositorio de una librería de JSON para Java <a href="https://github.com/google/gson">gson</a>.</p>
+
+<p><img src="/assets/img/opera_NubEF2hd0u.png" alt="Pagina Principal del Repositorio" /></p>
+
+<p>Se presiona el botón verde, en lugar de elegir <strong>Descargar ZIP</strong> se copia la URL del repositorio.</p>
+
+<p><img src="/assets/img/opera_qPnGLALQ6b.png" alt="Botón de Download" /></p>
+
+<p>Luego en el CMD se utiliza el siguiente comando: <em>git clone [URL-REPOSITORIO]</em>. Para este caso será:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>git clone https://github.com/google/gson.git
+</code></pre></div></div>
+<p>Puede observarse la descargar del proyecto en la carpeta indicada.</p>
+
+<p><img src="/assets/img/yumnuBfJEh.gif" alt="git clone" /></p>
+
+<h2 id="mantener-actualizado-el-repositorio">Mantener actualizado el repositorio</h2>
+<p>Ya que Git es un manejador de versiones es probable que un proyecto sea modificado regularmente. Esto significa que si clonó el proyecto hace unos días, es probable que haya código nuevo o modificaciones a bugs.</p>
+
+<p>Para mantener actualizado el repositorio (en caso que no lo haya modificado usted) puede utilizar el comando:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>git pull
+</code></pre></div></div>
+
+<p>Esto descargará las variaciones que existan en el repositorio remoto.</p>
+
+<p><img src="/assets/img/7DdFinoZlJ.gif" alt="git pull" /></p>
+
+<h2 id="otros-recursos">Otros recursos</h2>
+<p>Existen opciones que utilizan GUI para formular estas acciones.:</p>
+
+<p><strong>GitGUI</strong></p>
+
+<p><img src="/assets/img/wish_2QhajE7kch.png" alt="GitGUI" /></p>
+
+<p><strong>GitHub Desktop</strong>
+<img src="/assets/img/GitHubDesktop_lWHSf8RRFi.png" alt="GitHub Desktop" /></p>
+:ET
