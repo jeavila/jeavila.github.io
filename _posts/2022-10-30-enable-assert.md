@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Habilitar assert en Intellij IDEA"
+title:  "Habilitar assert en Intellij IDEA"
 category: Docs
 tags: [java, unit-test, ide]
 ---
@@ -30,4 +30,4 @@ Para realizarlo desde el IDE en esta caso desde Intellij IDEA se necesita lo sig
 3. En la caja de texto: VM options colocar *-ea*.
 ![VM Options](/assets/img/ea3.png)
 
-Con esto ya es posible detectar la instrucción con asset.
+Con esto ya es posible detectar la instrucción con asset, para ese build en particular. Si desea realizar en otro proyecto o en otro build, debe repetirse esta operación.
